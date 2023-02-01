@@ -1,0 +1,80 @@
+.header {
+    margin: 19px 0 0 0;
+}
+
+.navbar {
+    border-left: 2px solid $secondary-color;
+    min-height: 63px;
+    position: relative;
+    padding: 13px 0 13px 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-top: 2px solid $secondary-color;
+        width: 40px;
+        content: "";
+    }
+
+    &:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-bottom: 2px solid $secondary-color;
+        width: 40px;
+        content: "";
+    }
+
+    &-brand {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 33.3%;
+
+        &__title {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        &__subtitle {
+            font-family: "Work Sans";
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 13px;
+            opacity: 0.6;
+        }
+    }
+
+    &-menu {
+        display: flex;
+        flex-basis: 33.3%;
+
+        &__item {
+            margin-right: 40px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &__link {
+            color: $color-white;
+            text-decoration: none;
+            transition: color .5s;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+
+    &-menu--right {
+        display: flex;
+        flex-basis: 33.3%;
+        justify-content: flex-end;
+    }
+}

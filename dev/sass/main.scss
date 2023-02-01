@@ -1,0 +1,22 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: $primary-color;
+    color: $color-white;
+    margin: 0 var(--section-margin);
+    font-family: "Gilroy";
+}
+
+.container {
+    width: 100%;
+    max-width: 1802px;
+    margin: 0 auto;
+}
