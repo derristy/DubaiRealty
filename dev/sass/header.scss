@@ -86,6 +86,20 @@
 .dropdown {
     position: relative;
 
+    &.show {
+        .dropdown {
+            &-menu {
+                display: block;
+            }
+
+            &-btn {
+                &:after {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
     &-menu {
         display: none;
         position: absolute;
@@ -96,11 +110,6 @@
         border: 1px solid #979797;
         background: $primary-color;
         width: 247px;
-
-
-        &.show {
-            display: block;
-        }
     }
 
     &-btn {
@@ -115,10 +124,6 @@
             border-right: 4px solid transparent;
             border-bottom: 8px solid $color-white;
             transition: transform .5s;
-        }
-
-        &.show:after {
-            transform: rotate(180deg);
         }
     }
 
