@@ -51,6 +51,8 @@
 
     &-menu {
         display: flex;
+        align-items: center;
+        flex-wrap: wrap;
         flex-basis: 33.3%;
 
         &__item {
@@ -74,8 +76,10 @@
 
     &-menu--right {
         display: flex;
+        align-items: center;
+        flex-wrap: wrap;
         flex-basis: 33.3%;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
 }
 
@@ -141,6 +145,31 @@
         line-height: 17px;
         transition: color .1s;
     }
+}
+
+.language {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    text-transform: uppercase;
+    color: $color-white;
+    text-decoration: none;
+    transition: color .5s;
+    margin-right: 8px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.phone {
+    color: $color-white;
+    text-decoration: none;
 }
 
 @keyframes dropdown {

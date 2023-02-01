@@ -20,6 +20,12 @@
   font-weight: 400;
   font-display: swap;
 }
+@font-face {
+  font-family: "Work Sans";
+  src: url("../assets/fonts/WorkSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -41,6 +47,19 @@ body {
   width: 100%;
   max-width: 1802px;
   margin: 0 auto;
+}
+
+.btn {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  padding: 12px 13px;
+  border: none;
+}
+.btn-primary {
+  background: #FCD54C;
 }
 
 .header {
@@ -91,6 +110,8 @@ body {
 }
 .navbar-menu {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   flex-basis: 33.3%;
 }
 .navbar-menu__item {
@@ -109,8 +130,10 @@ body {
 }
 .navbar-menu--right {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   flex-basis: 33.3%;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .dropdown {
@@ -164,6 +187,29 @@ body {
   font-size: 14px;
   line-height: 17px;
   transition: color 0.1s;
+}
+
+.language {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.5s;
+  margin-right: 8px;
+}
+.language:last-child {
+  margin-right: 0;
+}
+.language:hover {
+  color: #FCD54C;
+}
+
+.phone {
+  color: #fff;
+  text-decoration: none;
 }
 
 @keyframes dropdown {

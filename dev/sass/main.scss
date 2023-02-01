@@ -20,3 +20,17 @@ body {
     max-width: 1802px;
     margin: 0 auto;
 }
+
+.btn {
+    font-family: "Work Sans";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-black;
+    padding: 12px 13px;
+    border: none;
+
+    &-primary {
+        background: $secondary-color;
+    }
+}
