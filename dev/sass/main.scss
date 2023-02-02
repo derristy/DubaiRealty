@@ -34,3 +34,114 @@ body {
         background: $secondary-color;
     }
 }
+
+.modal {
+    display: none;
+    background: rgba(39, 39, 39, 0.9);
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    &.show {
+        display: block;
+    }
+
+    &-close {
+        position: absolute;
+        top: -30px;
+        right: -74px;
+        width: 30px;
+        height: 30px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 14px;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            transform: rotate(45deg);
+            background: $secondary-color;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 14px;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            transform: rotate(-45deg);
+            background: $secondary-color;
+        }
+    }
+
+    &-dialog {
+        background: $color-white;
+        color: $color-black;
+        padding: 67px 140px 44px 140px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: modalAnimation 1s;
+    }
+
+    &-title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    &-subtitle {
+        font-family: "Work Sans";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 47px;
+    }
+
+    &-input {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        border: none;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #929292;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: $color-black;
+        }
+    }
+
+    &-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@keyframes modalAnimation {
+    from {
+        transform: translate(-50%, -70%);
+    }
+
+    to {
+        transform: translate(-50%, -50%);
+    }
+}

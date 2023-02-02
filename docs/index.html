@@ -59,12 +59,12 @@
                     </li>
                 </ul>
                 <div class="navbar-menu--right">
-                    <button class="btn btn-primary">Book a consultation</button>
+                    <button class="btn btn-primary" onclick='modalShow("#consultation");'>Book a consultation</button>
                     <div>
                         <a class="language" href="#">EN</a>
                         <a class="language" href="#">RU</a>
                     </div>
-                    <a class="phone" href="#">+7 (212) 674-25-10</a>
+                    <a class="phone" href="tel:+72126742510">+7 (212) 674-25-10</a>
                 </div>
             </div>
         </div>
@@ -74,6 +74,20 @@
     </main>
 
     <script src="assets/js/app.js"></script>
+
+    <div class="modal" tabindex="-1" id="consultation">
+        <div class="modal-dialog">
+            <span class="modal-close"></span>
+            <p class="modal-title">Leave your contacts</p>
+            <p class="modal-subtitle">we will contact you within three hours</p>
+
+            <form class="modal-form" action="#">
+                <input class="modal-input" placeholder="Name" type="text" name="username">
+                <input class="modal-input" placeholder="Phone" type="text" name="phone">
+                <button class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
