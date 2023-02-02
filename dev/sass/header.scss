@@ -1,5 +1,5 @@
 .header {
-    margin: 19px 0 0 0;
+    margin: 19px 0 26px 0;
 }
 
 .navbar {
@@ -103,6 +103,7 @@
     &-menu {
         display: none;
         position: absolute;
+        z-index: 100;
         top: 0;
         left: 0;
         transform: translateY(25px);
@@ -175,14 +176,4 @@
 .phone {
     color: $color-white;
     text-decoration: none;
-}
-
-@keyframes dropdown {
-    from {
-        transform: translateY(15px);
-    }
-
-    to {
-        transform: translateY(25px);
-    }
 }

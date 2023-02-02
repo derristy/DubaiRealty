@@ -1,0 +1,19 @@
+@keyframes dropdown {
+    from {
+        transform: translateY(15px);
+    }
+
+    to {
+        transform: translateY(25px);
+    }
+}
+
+@keyframes modalAnimation {
+    from {
+        transform: translate(-50%, -70%);
+    }
+
+    to {
+        transform: translate(-50%, -50%);
+    }
+}

@@ -1,4 +1,13 @@
 window.addEventListener("DOMContentLoaded", () => {
+    $(".owl-carousel").owlCarousel({
+        "nav": true,
+        "items": 1,
+        "navContainer": ".first-screen__nav",
+        "navText": ["Prev", "Next"],
+        "dotsContainer": ".first-screen__dots",
+        "dotsData": true,
+    });
+
     let dropdown = document.querySelectorAll(".dropdown");
     let modal = document.querySelectorAll(".modal");
 
