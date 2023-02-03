@@ -26,6 +26,12 @@
   font-weight: 600;
   font-display: swap;
 }
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../assets/fonts/SpaceGrotesk-Bold.ttf");
+  font-weight: 700;
+  font-display: swap;
+}
 @keyframes dropdown {
   from {
     transform: translateY(15px);
@@ -86,7 +92,7 @@ body:has(.modal.show) {
   display: none;
   background: rgba(39, 39, 39, 0.9);
   z-index: 100;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -234,6 +240,81 @@ body:has(.modal.show) {
   border-right: none;
   padding-right: 0;
   margin-right: 0;
+}
+.first-screen__content {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-30%, -50%);
+  border-left: 2px solid #FCD54C;
+  min-height: 383px;
+  padding: 44px 0 51px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.first-screen__content:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-top: 2px solid #FCD54C;
+  width: 124px;
+  content: "";
+}
+.first-screen__content:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px solid #FCD54C;
+  width: 124px;
+  content: "";
+}
+.first-screen__subtitle {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.first-screen__title {
+  font-family: "Space Grotesk";
+  max-width: 714px;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 100px;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+.first-screen__title span {
+  color: #FCD54C;
+}
+.first-screen__btn {
+  color: #fff;
+  border: none;
+  background: none;
+  font-family: "Work Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  position: relative;
+}
+.first-screen__btn:hover:after {
+  right: -30px;
+}
+.first-screen__btn:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border: 1px solid #fff;
+  border-right-style: none;
+  border-bottom-style: none;
+  transform: rotate(135deg);
+  position: absolute;
+  top: 3px;
+  right: -20px;
+  transition: right 0.3s;
 }
 
 .owl-dot.active .first-screen__number {

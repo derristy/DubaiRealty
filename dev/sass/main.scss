@@ -43,7 +43,7 @@ body:has(.modal.show) {
     display: none;
     background: rgba(39, 39, 39, 0.9);
     z-index: 100;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -211,6 +211,90 @@ body:has(.modal.show) {
                 margin-right: 0;
             }
         };
+    }
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-30%, -50%);
+        border-left: 2px solid $secondary-color;
+        min-height: 383px;
+        padding: 44px 0 51px 28px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-top: 2px solid $secondary-color;
+            width: 124px;
+            content: "";
+        }
+
+        &:after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-bottom: 2px solid $secondary-color;
+            width: 124px;
+            content: "";
+        }
+    }
+
+    &__subtitle {
+        font-family: "Work Sans";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-family: "Space Grotesk";
+        max-width: 714px;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 100px;
+        text-transform: capitalize;
+        margin-bottom: 50px;
+
+        & span {
+            color: $secondary-color;
+        }
+    }
+
+    &__btn {
+        color: $color-white;
+        border: none;
+        background: none;
+        font-family: "Work Sans";
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        position: relative;
+
+        &:hover:after {
+            right: -30px;
+        }
+
+        &:after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: 1px solid $color-white;
+            border-right-style: none;
+            border-bottom-style: none;
+            transform: rotate(135deg);
+            position: absolute;
+            top: 3px;
+            right: -20px;
+            transition: right .3s;
+        }
     }
 }
 
