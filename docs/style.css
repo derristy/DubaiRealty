@@ -186,6 +186,7 @@ body:has(.modal.show) {
 }
 .first-screen__slide {
   background-repeat: no-repeat;
+  background-size: cover;
   min-height: 971px;
 }
 .first-screen__dots {
@@ -315,6 +316,24 @@ body:has(.modal.show) {
   top: 3px;
   right: -20px;
   transition: right 0.3s;
+}
+.first-screen__social {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.first-screen__social-item {
+  margin-bottom: 20px;
+}
+.first-screen__social-item:last-child {
+  margin-bottom: 0;
+}
+.first-screen__social-link:hover .fill {
+  fill: #d6caca;
 }
 
 .owl-dot.active .first-screen__number {
