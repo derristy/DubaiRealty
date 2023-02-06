@@ -364,6 +364,9 @@ body:has(.header.show) {
   background: #272727;
 }
 
+.header.show .navbar-toggler {
+  display: block;
+}
 .header.show .navbar-toggler-icon {
   background: transparent;
 }
@@ -527,7 +530,7 @@ body:has(.header.show) {
 .dropdown.show .dropdown-menu {
   display: block;
 }
-.dropdown.show .dropdown-btn:after {
+.dropdown.show .dropdown-btn {
   transform: rotate(180deg);
 }
 .dropdown-menu {
@@ -543,19 +546,14 @@ body:has(.header.show) {
   width: 247px;
 }
 .dropdown-btn {
-  position: relative;
-}
-.dropdown-btn:after {
-  content: "";
-  position: absolute;
-  top: 6px;
-  right: -14px;
+  display: inline-block;
   width: 0;
   height: 0;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-bottom: 8px solid #fff;
   transition: transform 0.5s;
+  vertical-align: middle;
 }
 .dropdown-item {
   padding: 10px 0;
