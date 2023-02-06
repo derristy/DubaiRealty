@@ -380,12 +380,26 @@ body:has(.header.show) {
   flex-direction: column;
   flex-basis: 100%;
   margin: 0;
+  margin-top: 60px;
+  border-bottom: 1px solid #FCD54C;
 }
 .header.show .navbar-menu--right {
   display: flex;
   flex-basis: 100%;
   flex-direction: column;
   margin: 0;
+  margin-top: 38px;
+}
+.header.show .navbar-menu--right .phone {
+  order: 1;
+  margin-top: 38px;
+}
+.header.show .navbar-menu--right .language {
+  order: 2;
+  margin-top: 34px;
+}
+.header.show .navbar-menu__item {
+  margin-bottom: 40px;
 }
 .header.show .navbar-menu__link {
   font-size: 36px;

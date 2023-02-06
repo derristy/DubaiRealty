@@ -35,12 +35,29 @@
         flex-direction: column;
         flex-basis: 100%;
         margin: 0;
+        margin-top: 60px;
+        border-bottom: 1px solid $secondary-color;
 
         &--right {
             display: flex;
             flex-basis: 100%;
             flex-direction: column;
             margin: 0;
+            margin-top: 38px;
+
+            & .phone {
+                order: 1;
+                margin-top: 38px;
+            }
+
+            & .language {
+                order: 2;
+                margin-top: 34px;
+            }
+        }
+
+        &__item {
+            margin-bottom: 40px;
         }
 
         &__link {
