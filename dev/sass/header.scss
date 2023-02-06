@@ -1,5 +1,41 @@
 .header {
     margin: 19px 0 26px 0;
+
+    &.show {
+        margin: 0;
+        padding: 19px var(--section-margin) 26px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background: $primary-color;
+    }
+}
+
+.header.show .navbar {
+    flex-direction: column;
+
+    &-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &--right {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item {
+            margin-right: 0;
+        }
+
+        &__link {
+            font-size: 36px;
+        }
+    }
 }
 
 .navbar {
@@ -14,7 +50,6 @@
         flex-direction: column;
         padding: 13px 0 13px 15px;
         border-left: 2px solid $secondary-color;
-        flex-grow: 1;
 
         &:before {
             position: absolute;
@@ -53,7 +88,6 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        flex-grow: 1;
 
         &__item {
             margin-right: 40px;
@@ -83,7 +117,6 @@
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
-        flex-grow: 1;
     }
 }
 

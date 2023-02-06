@@ -1,25 +1,10 @@
 @media (max-width: 991px){
     .navbar {
         &-menu {
-            order: 2;
-            flex-basis: 100%;
-            flex-direction: column;
-    
-            &__item {
-                margin-right: 0;
-                margin-bottom: 20px;
+            display: none;
 
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-    
             &--right {
-                order: 1;
-            }
-
-            &__link {
-                font-size: 36px;
+                display: none;
             }
         }
     }

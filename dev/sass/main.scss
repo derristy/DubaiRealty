@@ -19,6 +19,10 @@ body:has(.modal.show) {
     overflow: hidden;
 }
 
+body:has(.header.show) {
+    overflow: hidden;
+}
+
 .container {
     width: 100%;
     max-width: 1802px;
