@@ -87,9 +87,14 @@ body:has(.header.show) {
   color: #000;
   padding: 12px 13px;
   border: none;
+  transition: color 0.5s;
+  cursor: pointer;
 }
 .btn-primary {
   background: #FCD54C;
+}
+.btn-primary:hover {
+  color: #fff;
 }
 
 .modal {
@@ -381,7 +386,6 @@ body:has(.header.show) {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -424,6 +428,8 @@ body:has(.header.show) {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin-left: 150px;
+  margin-right: auto;
 }
 .navbar-menu__item {
   margin-right: 40px;
@@ -448,6 +454,9 @@ body:has(.header.show) {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.navbar-menu--right .btn {
+  margin-right: 120px;
 }
 
 .dropdown {
@@ -505,6 +514,9 @@ body:has(.header.show) {
 }
 
 .language {
+  margin-right: 50px;
+}
+.language-item {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
@@ -515,16 +527,20 @@ body:has(.header.show) {
   transition: color 0.5s;
   margin-right: 8px;
 }
-.language:last-child {
+.language-item:last-child {
   margin-right: 0;
 }
-.language:hover {
+.language-item:hover {
   color: #FCD54C;
 }
 
 .phone {
   color: #fff;
   text-decoration: none;
+  transition: color 0.5s;
+}
+.phone:hover {
+  color: #FCD54C;
 }
 
 @media (max-width: 991px) {

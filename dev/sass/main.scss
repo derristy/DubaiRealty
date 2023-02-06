@@ -37,9 +37,15 @@ body:has(.header.show) {
     color: $color-black;
     padding: 12px 13px;
     border: none;
+    transition: color .5s;
+    cursor: pointer;
 
     &-primary {
         background: $secondary-color;
+
+        &:hover {
+            color: $color-white;
+        }
     }
 }
 

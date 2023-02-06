@@ -40,7 +40,6 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     
@@ -88,6 +87,8 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        margin-left: 150px;
+        margin-right: auto;
 
         &__item {
             margin-right: 40px;
@@ -117,6 +118,10 @@
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        & .btn {
+            margin-right: 120px;
+        }
     }
 }
 
@@ -191,26 +196,35 @@
 }
 
 .language {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: right;
-    text-transform: uppercase;
-    color: $color-white;
-    text-decoration: none;
-    transition: color .5s;
-    margin-right: 8px;
+    margin-right: 50px;
 
-    &:last-child {
-        margin-right: 0;
-    }
-
-    &:hover {
-        color: $secondary-color;
+    &-item {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: right;
+        text-transform: uppercase;
+        color: $color-white;
+        text-decoration: none;
+        transition: color .5s;
+        margin-right: 8px;
+    
+        &:last-child {
+            margin-right: 0;
+        }
+    
+        &:hover {
+            color: $secondary-color;
+        }
     }
 }
 
 .phone {
     color: $color-white;
     text-decoration: none;
+    transition: color .5s;
+
+    &:hover {
+        color: $secondary-color;
+    }
 }
