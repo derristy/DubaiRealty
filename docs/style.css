@@ -48,14 +48,6 @@
     transform: translate(-50%, -50%);
   }
 }
-@keyframes headerAnimation {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -370,7 +362,6 @@ body:has(.header.show) {
   height: 100%;
   z-index: 100;
   background: #272727;
-  animation: headerAnimation 1s;
 }
 
 .header.show .navbar-toggler-icon {
@@ -430,6 +421,7 @@ body:has(.header.show) {
   bottom: 8px;
   left: 0;
   position: absolute;
+  transition: transform 0.5s;
 }
 .navbar-toggler-icon::after {
   content: "";
@@ -440,6 +432,7 @@ body:has(.header.show) {
   top: 8px;
   left: 0;
   position: absolute;
+  transition: transform 0.5s;
 }
 .navbar-brand {
   position: relative;
