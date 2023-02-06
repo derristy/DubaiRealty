@@ -387,19 +387,22 @@ body:has(.header.show) {
   display: flex;
   flex-basis: 100%;
   flex-direction: column;
-  margin: 0;
-  margin-top: 38px;
+  margin: 38px 0 0 0;
 }
 .header.show .navbar-menu--right .phone {
   order: 1;
-  margin-top: 38px;
+  margin: 38px 0 0 0;
 }
 .header.show .navbar-menu--right .language {
   order: 2;
-  margin-top: 34px;
+  margin: 34px 0 0 0;
+}
+.header.show .navbar-menu--right .btn {
+  margin: 0 0 0 0;
 }
 .header.show .navbar-menu__item {
-  margin-bottom: 40px;
+  margin: 0;
+  margin: 0 0 40px 0;
 }
 .header.show .navbar-menu__link {
   font-size: 36px;
@@ -538,6 +541,9 @@ body:has(.header.show) {
   border: 1px solid #979797;
   background: #272727;
   width: 247px;
+}
+.dropdown-btn {
+  position: relative;
 }
 .dropdown-btn:after {
   content: "";
