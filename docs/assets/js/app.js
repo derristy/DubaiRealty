@@ -10,6 +10,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
     let dropdown = document.querySelectorAll(".dropdown");
     let modal = document.querySelectorAll(".modal");
+    let navbarToggler = document.querySelector(".navbar-toggler");
+
+    navbarToggler.addEventListener("click", () => {
+        document.querySelector(".header").classList.toggle("show");
+    });
 
     dropdown.forEach((element) => {
         element.addEventListener("click", (event) => {

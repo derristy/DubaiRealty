@@ -50,10 +50,10 @@
 }
 @keyframes headerAnimation {
   from {
-    transform: translateX(-100%);
+    transform: translateY(-100%);
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 *, *:before, *:after {
@@ -373,6 +373,17 @@ body:has(.header.show) {
   animation: headerAnimation 1s;
 }
 
+.header.show .navbar-toggler-icon {
+  background: transparent;
+}
+.header.show .navbar-toggler-icon:before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+.header.show .navbar-toggler-icon:after {
+  top: 0;
+  transform: rotate(-45deg);
+}
 .header.show .navbar-menu {
   display: flex;
   flex-direction: column;
@@ -393,6 +404,42 @@ body:has(.header.show) {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+.navbar-toggler {
+  display: none;
+  border: none;
+  background: none;
+  width: 30px;
+  height: 30px;
+}
+.navbar-toggler-icon {
+  display: block;
+  background: #fff;
+  width: 30px;
+  border-radius: 5px;
+  height: 2px;
+  position: relative;
+}
+.navbar-toggler-icon:before {
+  content: "";
+  background: #fff;
+  width: 30px;
+  border-radius: 5px;
+  height: 2px;
+  bottom: 8px;
+  left: 0;
+  position: absolute;
+}
+.navbar-toggler-icon::after {
+  content: "";
+  background: #fff;
+  width: 30px;
+  border-radius: 5px;
+  height: 2px;
+  top: 8px;
+  left: 0;
+  position: absolute;
 }
 .navbar-brand {
   position: relative;
@@ -565,6 +612,9 @@ body:has(.header.show) {
 @media (max-width: 991px) {
   :root {
     --section-margin: 38px;
+  }
+  .navbar-toggler {
+    display: block;
   }
   .navbar-menu {
     display: none;

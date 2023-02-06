@@ -16,6 +16,21 @@
 }
 
 .header.show .navbar {
+    &-toggler {
+        &-icon {
+            background: transparent;
+
+            &:before {
+                bottom: 0;
+                transform: rotate(45deg);
+            }
+
+            &:after {
+                top: 0;
+                transform: rotate(-45deg);
+            }
+        }
+    }
     &-menu {
         display: flex;
         flex-direction: column;
@@ -39,6 +54,46 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-toggler {
+        display: none;
+        border: none;
+        background: none;
+        width: 30px;
+        height: 30px;
+
+        &-icon {
+            display: block;
+            background: $color-white;
+            width: 30px;
+            border-radius: 5px;
+            height: 2px;
+            position: relative;
+
+            &:before {
+                content: "";
+                background: $color-white;
+                width: 30px;
+                border-radius: 5px;
+                height: 2px;
+                bottom: 8px;
+                left: 0;
+                position: absolute;
+            }
+
+            &::after {
+                content: "";
+                background: $color-white;
+                width: 30px;
+                border-radius: 5px;
+                height: 2px;
+                top: 8px;
+                left: 0;
+                position: absolute;
+            }
+        }
+    }
     
     &-brand {
         position: relative;
