@@ -205,7 +205,7 @@ body:has(.header.show) {
   z-index: 5;
   background: #272727;
   display: flex;
-  padding: 70px 38px 45px 60px;
+  padding: 57px 41px 40px 41px;
 }
 .first-screen__dots .owl-dot {
   margin-right: 171px;
@@ -617,7 +617,15 @@ body:has(.header.show) {
   color: #FCD54C;
 }
 
+@media (max-width: 1880px) {
+  .first-screen__nav {
+    left: 30px;
+  }
+}
 @media (max-width: 1400px) {
+  .first-screen__dots .owl-dot {
+    margin-right: 50px;
+  }
   .navbar-menu {
     margin-left: 30px;
   }
@@ -629,6 +637,19 @@ body:has(.header.show) {
   }
   .language {
     margin-right: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .first-screen__title {
+    font-size: 70px;
+    max-width: 600px;
+  }
+  .first-screen__dots .owl-dot {
+    margin-right: 20px;
+  }
+  .first-screen__number {
+    margin-right: 15px;
+    font-size: 50px;
   }
 }
 @media (max-width: 991px) {

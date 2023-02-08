@@ -1,4 +1,20 @@
+@media (max-width: 1880px){
+    .first-screen {
+        &__nav {
+            left: 30px;
+        }
+    }
+}
+
 @media (max-width: 1400px){
+    .first-screen {
+        &__dots {
+            & .owl-dot {
+                margin-right: 50px;
+            }
+        }
+    }
+
     .navbar {
         &-menu {
             margin-left: 30px;
@@ -17,6 +33,26 @@
 
     .language {
         margin-right: 20px;
+    }
+}
+
+@media (max-width: 1200px){
+    .first-screen {
+        &__title {
+            font-size: 70px;
+            max-width: 600px;
+        }
+
+        &__dots {
+            & .owl-dot {
+                margin-right: 20px;
+            }
+        }
+
+        &__number {
+            margin-right: 15px;
+            font-size: 50px;
+        }
     }
 }
 
