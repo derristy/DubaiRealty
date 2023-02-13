@@ -79,10 +79,11 @@
         &__description {
             width: 87px;
             font-size: 12px;
+            line-height: 14px;
         }
 
         &__dots {
-            padding: 11px 11px 11px 30px;
+            padding: 20px 11px 11px 30px;
         }
 
         &__number {
@@ -107,7 +108,7 @@
         }
 
         &__subtitle {
-            font-size: 10px;
+            font-size: 13px;
         }
 
         &__title {
@@ -128,6 +129,27 @@
             display: flex;
             justify-content: center;
             border-bottom: 1px solid $secondary-color;
+        }
+
+        &__title {
+            font-size: 43px;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .first-screen {
+        &__dots {
+            & .owl-dot {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        &__number {
+            align-self: flex-start;
+            margin-right: 0;
+            margin-bottom: 20px;
         }
     }
 }
