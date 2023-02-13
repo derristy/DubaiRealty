@@ -61,4 +61,5 @@ const modalShow = (id) => {
         element.classList.remove("show");
     });
     document.querySelector(id).classList.add("show");
+    $(".owl-carousel").trigger("refresh.owl.carousel");
 };

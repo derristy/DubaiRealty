@@ -665,5 +665,38 @@ body:has(.header.show) {
   .navbar-menu--right {
     display: none;
   }
+  .first-screen__description {
+    width: 87px;
+    font-size: 12px;
+  }
+  .first-screen__dots {
+    padding: 11px 11px 11px 30px;
+  }
+  .first-screen__number {
+    font-size: 40px;
+  }
+  .first-screen__nav {
+    bottom: 25px;
+    left: 25px;
+  }
+  .first-screen__nav button {
+    font-size: 15px;
+  }
+  .first-screen__content {
+    border-width: 4px;
+  }
+  .first-screen__content:before, .first-screen__content:after {
+    border-width: 4px;
+  }
+  .first-screen__subtitle {
+    font-size: 10px;
+  }
+  .first-screen__title {
+    font-size: 50px;
+    max-width: 370px;
+  }
+  .first-screen__btn {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -74,4 +74,49 @@
             }
         }
     }
+
+    .first-screen {
+        &__description {
+            width: 87px;
+            font-size: 12px;
+        }
+
+        &__dots {
+            padding: 11px 11px 11px 30px;
+        }
+
+        &__number {
+            font-size: 40px;
+        }
+
+        &__nav {
+            bottom: 25px;
+            left: 25px;
+
+            & button {
+                font-size: 15px;
+            }
+        }
+
+        &__content {
+            border-width: 4px;
+
+            &:before, &:after {
+                border-width: 4px;
+            }
+        }
+
+        &__subtitle {
+            font-size: 10px;
+        }
+
+        &__title {
+            font-size: 50px;
+            max-width: 370px;
+        }
+
+        &__btn {
+            font-size: 16px;
+        }
+    }
 }
