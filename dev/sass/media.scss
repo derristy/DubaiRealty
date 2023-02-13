@@ -120,3 +120,14 @@
         }
     }
 }
+
+@media (max-width: 768px){
+    .first-screen {
+        &__dots {
+            position: static;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid $secondary-color;
+        }
+    }
+}

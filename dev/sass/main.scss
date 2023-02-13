@@ -152,6 +152,7 @@ body:has(.header.show) {
 .first-screen {
     position: relative;
     height: 971px;
+    margin-bottom: 90px;
 
     & .owl-prev.disabled, .owl-next.disabled {
         opacity: 0.5;

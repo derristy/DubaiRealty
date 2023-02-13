@@ -189,6 +189,7 @@ body:has(.header.show) {
 .first-screen {
   position: relative;
   height: 971px;
+  margin-bottom: 90px;
 }
 .first-screen .owl-prev.disabled, .first-screen .owl-next.disabled {
   opacity: 0.5;
@@ -697,6 +698,14 @@ body:has(.header.show) {
   }
   .first-screen__btn {
     font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .first-screen__dots {
+    position: static;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #FCD54C;
   }
 }
 /*# sourceMappingURL=style.css.map */
