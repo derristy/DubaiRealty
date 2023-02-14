@@ -106,6 +106,9 @@
         }
 
         &__content {
+            top: 30%;
+            left: 30%;
+            transform: translate(-30%, -30%);
             border-width: 4px;
             padding: 20px 0 16px 25px;
 
@@ -130,10 +133,26 @@
             font-size: 16px;
         }
     }
+
+    .modal {
+        &-dialog {
+            padding: 20px;
+        }
+
+        &-close {
+            top: -40px;
+            right: 0;
+        }
+
+        &-title {
+            font-size: 40px;
+        }
+    }
 }
 
 @media (max-width: 768px){
     .first-screen {
+        margin-bottom: calc(var(--margin-bottom) + 69px);
         &__dots {
             position: static;
             display: flex;
@@ -157,6 +176,7 @@
     }
 
     .first-screen {
+        margin-bottom: calc(var(--margin-bottom) + 113px);
         &__dots {
             & .owl-dot {
                 display: flex;
@@ -168,6 +188,12 @@
             align-self: flex-start;
             margin-right: 0;
             margin-bottom: 20px;
+        }
+    }
+
+    .modal {
+        &-title {
+            font-size: 20px;
         }
     }
 }
