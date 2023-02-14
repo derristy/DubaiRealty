@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-    $(".owl-carousel").owlCarousel({
+    $(".first-screen .owl-carousel").owlCarousel({
         "nav": true,
         "items": 1,
         "navContainer": ".first-screen__nav",
@@ -61,5 +61,5 @@ const modalShow = (id) => {
         element.classList.remove("show");
     });
     document.querySelector(id).classList.add("show");
-    $(".owl-carousel").trigger("refresh.owl.carousel");
+    $(".first-screen .owl-carousel").trigger("refresh.owl.carousel");
 };
